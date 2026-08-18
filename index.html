@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashcroft Dental House · Est. 1910 · London</title>
+    <meta
+      name="description"
+      content="A chemist, a daughter, and a very British obsession. Ashcroft Dental House, London, since 1910."
+    />
+    <link rel="icon" href="/assets/logo/monogram-gold.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/fontsource/css/cascadia-code@5.2.3/index.min.css"
+    />
+  </head>
+  <body>
+    <div class="gate" id="gate">
+      <div class="gate__inner">
+        <img class="gate__mark" src="/assets/logo/lockup_clean.png" alt="Ashcroft Dental House" />
+        <p class="ornament">A smile worthy of a crown</p>
+        <button class="gate__btn" id="enter" type="button">Enter the house</button>
+        <p class="gate__hint">Then watch, or descend the years.</p>
+      </div>
+    </div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="chrome" id="chrome">
+      <div class="chrome__tl">Est. 1910</div>
+      <div class="chrome__tc">Ashcroft Dental House</div>
+      <div class="chrome__tr">London · United Kingdom</div>
+      <div class="chrome__bl" id="chapter-label">Prologue</div>
+      <div class="chrome__bc">
+        <span class="flourish" aria-hidden="true"></span>
+      </div>
+      <div class="chrome__br" id="chapter-num">00</div>
+    </header>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress__bar" id="progress-bar"></div>
+    </div>
+
+    <nav class="years" id="years" aria-label="The house, in years">
+      <button data-year="1881" class="is-active">1881</button>
+      <button data-year="1907">1907</button>
+      <button data-year="1910">1910</button>
+      <button data-year="1914">1914</button>
+      <button data-year="1924">1924</button>
+      <button data-year="1960">1960</button>
+      <button data-year="1999">1999</button>
+      <button data-year="2010">2010</button>
+      <button data-year="now">Now</button>
+    </nav>
+
+    <div class="controls" id="controls">
+      <button class="play" id="play" type="button" aria-pressed="false">
+        <span class="play__ring">
+          <span class="play__icon" id="play-icon"></span>
+        </span>
+        <span class="play__copy">
+          <em>Watch the house</em>
+          <small>or scroll, slowly</small>
+        </span>
+      </button>
+      <button class="replay" id="replay" type="button">
+        <span class="play__ring">
+          <svg class="replay__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"
+            />
+            <path fill="currentColor" d="M4.2 3.8v5.2h5.2z" />
+          </svg>
+        </span>
+        <span class="play__copy">
+          <em>From the start</em>
+          <small>begin again</small>
+        </span>
+      </button>
+    </div>
+
+    <main id="stage" class="stage">
+      <!-- 00 TITLE -->
+      <section class="scene" data-scene="title" data-year="1881">
+        <div class="scene__ground" style="background:#000"></div>
+        <div class="watermark" aria-hidden="true">ASHCROFT</div>
+        <div class="scene__plate plate--title">
+          <img
+            class="mark mark--gold"
+            src="/assets/logo/monogram-gold.png"
+            alt=""
+          />
+          <p class="ornament">A smile worthy of a crown</p>
+          <h1 class="display display--hero">Ashcroft</h1>
+          <p class="label">Dental House · Bloomsbury · Since nineteen-ten</p>
+          <span class="gold-rule"></span>
+          <p class="lead lead--center">
+            The finest smile is a British one.
+          </p>
+        </div>
+      </section>
+
+      <!-- 01 BORN -->
+      <section class="scene" data-scene="born" data-year="1881">
+        <div class="scene__ground" style="background:#0a0908"></div>
+        <figure class="scene__frame" data-origin="48% 55%">
+          <img class="scene-photo" data-src="/assets/scenes/winter-street.jpg" decoding="async" alt="A gas-lit London street in the year of his birth." />
+        </figure>
+        <div class="scene__plate plate--left">
+          <p class="label">Chapter I · 1881</p>
+          <h2 class="display">A boy named<br />Arthur</h2>
+          <p class="body">
+            Born in London, eighteen eighty-one. The city was still gas-lit. He
+            would live long enough to dislike chalk, and to found a house that
+            outlasted him.
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 MARRIAGE — before the shop -->
+      <section class="scene" data-scene="shirley" data-year="1907">
+        <div class="scene__ground" style="background:#4a1f24"></div>
+        <figure class="scene__frame" data-origin="38% 50%">
+          <img class="scene-photo" data-src="/assets/scenes/spring-street.jpg" decoding="async" alt="A Bloomsbury pavement, a pram, a marriage before a shop." />
+        </figure>
+        <div class="scene__plate plate--right">
+          <p class="ornament">Before the house existed</p>
+          <h2 class="display">Dr. Shirley<br />Harcourt</h2>
+          <p class="body">
+            A physician-chemist of the London School of Medicine for Women. They
+            were married in 1907 at St George’s, Bloomsbury — before there was a
+            shop, before there was a tin. The house began as a marriage. The
+            formula came after.
+          </p>
+          <p class="label">Married 1907 · Then the work began</p>
+        </div>
+      </section>
+
+      <!-- 03 STREET -->
+      <section class="scene" data-scene="street" data-year="1910">
+        <div class="scene__ground" style="background:#0a0908"></div>
+        <figure class="scene__frame" data-origin="42% 58%">
+          <img class="scene-photo" data-src="/assets/scenes/dark.jpg" decoding="async" alt="A snow-wet London street, autumn 1910." />
+        </figure>
+        <div class="scene__plate plate--left">
+          <p class="label">Autumn 1910</p>
+          <h2 class="display">On a wet street<br />in Bloomsbury</h2>
+          <p class="body">
+            They opened a narrow shop. Rain on the glass. The door opened at the
+            same hour whether anyone came or not. Arthur was twenty-nine. Shirley
+            kept the notes.
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 ARTHUR -->
+      <section class="scene" data-scene="arthur" data-year="1910">
+        <div class="scene__ground" style="background:#1f332a"></div>
+        <figure class="scene__frame" data-origin="55% 40%">
+          <img class="scene-photo" data-src="/assets/scenes/fires.jpg" decoding="async" alt="Lamps lit against the London dark." />
+        </figure>
+        <div class="scene__plate plate--right">
+          <p class="ornament">The chemist</p>
+          <h2 class="display">Arthur Ashcroft</h2>
+          <p class="body">
+            A dispensing chemist with an unreasonable dislike of chalk-based
+            tooth powders. The powders of the day scoured more than they cleaned.
+            He intended to remake them — and to put nothing in a tin he would not
+            put in his own mouth.
+          </p>
+        </div>
+      </section>
+
+      <!-- 03 FOUR WINTERS -->
+      <section class="scene" data-scene="winters" data-year="1914">
+        <div class="scene__ground" style="background:#1f332a"></div>
+        <figure class="scene__frame kenburns" data-origin="50% 50%">
+          <img class="scene-photo" data-src="/assets/scenes/autumn.jpg" decoding="async" alt="First cold. Four winters of grinding, washing, testing." />
+        </figure>
+        <div class="scene__plate plate--center">
+          <p class="label">1910 — 1914</p>
+          <h2 class="display">Four winters</h2>
+          <p class="lead lead--center">
+            The powders of the day scoured more than they cleaned.
+          </p>
+          <ul class="ticks">
+            <li>Grinding</li>
+            <li>Washing</li>
+            <li>Testing</li>
+          </ul>
+          <p class="body body--center">
+            Until he arrived at a soft paste of English peppermint and clove
+            oil. He wrote it into the ledger as Formula No. 7.
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 NINEPENCE -->
+      <section class="scene" data-scene="ninepence" data-year="1914">
+        <div class="scene__ground" style="background:#f4efe2"></div>
+        <div class="scene__plate plate--center plate--ink">
+          <p class="ornament">A Tuesday</p>
+          <h2 class="display">Ninepence</h2>
+          <p class="big-num">9<span>d</span></p>
+          <p class="body body--center">
+            He sold the first tin on a Tuesday for ninepence. Chalk-free. Soft.
+            The shop’s customers began asking for the tin by its picture before
+            they asked for it by name.
+          </p>
+          <p class="label">Formula No. 7 · Improved twice</p>
+        </div>
+      </section>
+
+      <!-- 05 GLADYS -->
+      <section class="scene" data-scene="gladys" data-year="1914">
+        <div class="scene__ground" style="background:#f4efe2"></div>
+        <figure class="scene__frame frame--soft" data-origin="70% 45%">
+          <img class="scene-photo" data-src="/assets/scenes/april-rain.jpg" decoding="async" alt="Paper, rain, and a quiet London spring." />
+        </figure>
+        <div class="scene__plate plate--left plate--ink">
+          <p class="label">Their daughter</p>
+          <h2 class="display">Gladys<br />gave it a face</h2>
+          <p class="body">
+            She grew up among the ledgers. When her hand was sure enough, she
+            engraved the label herself, set the name in a hand she cut by eye,
+            and pressed each tin with a fleur seal in red wax. Ornament, in this
+            house, is earned — never bought in.
+          </p>
+        </div>
+        <div class="seal seal--wax" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="56" fill="#4a1f24" />
+            <circle cx="60" cy="60" r="48" fill="none" stroke="#c88a3e" stroke-width="1.2" />
+            <text x="60" y="54" text-anchor="middle" fill="#f4efe2" font-family="Playfair Display, serif" font-size="14" letter-spacing="3">FLEUR</text>
+            <text x="60" y="74" text-anchor="middle" fill="#c88a3e" font-family="Playfair Display, serif" font-size="18">1910</text>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 06 THE RULE -->
+      <section class="scene" data-scene="rule" data-year="1910">
+        <div class="scene__ground" style="background:#4a1f24"></div>
+        <div class="scene__plate plate--center">
+          <p class="label">The house rule</p>
+          <blockquote class="quote">
+            Nothing goes in the tin that we would not put in our own mouths.
+            Nothing goes on the tin that we did not draw ourselves.
+          </blockquote>
+          <p class="ornament">Arthur &amp; Shirley Ashcroft · from the first winter</p>
+        </div>
+      </section>
+
+      <!-- 07 1924 -->
+      <section class="scene" data-scene="britain" data-year="1924">
+        <div class="scene__ground" style="background:#22335c"></div>
+        <figure class="scene__frame" data-origin="50% 60%">
+          <img class="scene-photo" data-src="/assets/scenes/market.jpg" decoding="async" alt="A London market, herbs in wicker, the city waking." />
+        </figure>
+        <div class="scene__plate plate--left">
+          <p class="label">Chapter II · 1924</p>
+          <h2 class="display">From Edinburgh<br />to Bath</h2>
+          <p class="body">
+            By nineteen twenty-four the fleur was on chemists’ shelves the
+            length of the country. The tin travelled by its picture. The
+            formula did not.
+          </p>
+        </div>
+      </section>
+
+      <!-- 08 GEN 2 -->
+      <section class="scene" data-scene="edward" data-year="1960">
+        <div class="scene__ground" style="background:#22335c"></div>
+        <figure class="scene__frame" data-origin="60% 50%">
+          <img class="scene-photo" data-src="/assets/scenes/summer.jpg" decoding="async" alt="High summer, brass running slow." />
+        </figure>
+        <div class="scene__plate plate--right">
+          <p class="ornament">The second generation</p>
+          <h2 class="display">Edward Harcourt<br />Ashcroft</h2>
+          <p class="body">
+            Their son took the house in 1960. Spearmint became the first new
+            flavour in fifty years. Navy and cream were fixed as house colours.
+            The Blue Box was born. The formula was not rewritten. It was made
+            quieter, and more sure of itself.
+          </p>
+          <p class="label">1960 · The Blue Box</p>
+        </div>
+      </section>
+
+      <!-- 09 DAMU 1999 -->
+      <section class="scene" data-scene="damu" data-year="1999">
+        <div class="scene__ground" style="background:#000"></div>
+        <figure class="scene__frame" data-origin="50% 48%">
+          <img class="scene-photo" data-src="/assets/scenes/years-end.jpg" decoding="async" alt="The year closes. The name changes hands." />
+        </figure>
+        <div class="scene__plate plate--center">
+          <p class="label">Chapter III · 1999</p>
+          <h2 class="display">DAMU Ltd.<br />takes the name</h2>
+          <p class="body body--center">
+            After the second generation, DAMU Ltd. of London acquired the brand
+            name. Not a factory. The name, the ledgers, the original cuts.
+            They did not put a tin on a shelf. First they went to work on
+            themselves.
+          </p>
+        </div>
+      </section>
+
+      <!-- 10 REBUILD -->
+      <section class="scene" data-scene="rebuild" data-year="1999">
+        <div class="scene__ground" style="background:#f4efe2"></div>
+        <figure class="scene__frame frame--soft" data-origin="40% 50%">
+          <img class="scene-photo" data-src="/assets/scenes/quiet-weeks.jpg" decoding="async" alt="Dust in the sunlight. The shelves counted twice." />
+        </figure>
+        <div class="scene__plate plate--left plate--ink">
+          <p class="label">1999 — 2010</p>
+          <h2 class="display">Eleven quiet<br />years</h2>
+          <p class="body">
+            Laboratories. Archives. The identity redrawn from Gladys’s
+            engravings — not replaced. Nano-hydroxyapatite. Clinical
+            specialisation. They would not return the name to the shelf until
+            the science was ready.
+          </p>
+        </div>
+      </section>
+
+      <!-- 11 2010 RETURN -->
+      <section class="scene" data-scene="science" data-year="2010">
+        <div class="scene__ground" style="background:#0a0908"></div>
+        <figure class="scene__frame" data-origin="50% 50%">
+          <img class="scene-photo" data-src="/assets/scenes/june-light.jpg" decoding="async" alt="Long light. The name returns." />
+        </figure>
+        <div class="scene__plate plate--center">
+          <p class="ornament">A century, then a return</p>
+          <h2 class="display">2010 · The name<br />on the shelf again</h2>
+          <p class="body body--center">
+            A hundred years after Arthur opened the door, DAMU brought Ashcroft
+            back — with modern science inside the old rule. Specialised pastes.
+            A second century. The finest smile is still a British one.
+          </p>
+          <p class="label">One formula, improved twice</p>
+        </div>
+      </section>
+
+      <!-- 12 COLLECTION -->
+      <section class="scene scene--products" data-scene="collection" data-year="now">
+        <div class="scene__ground" style="background:#f4efe2"></div>
+        <div class="collection">
+          <header class="collection__head">
+            <p class="label">The range · 75 ml · Returned 2010</p>
+            <h2 class="display">Nine pastes.<br />Four colours. One house.</h2>
+            <p class="body">
+              Choose a tin. It will open as Gladys would have wanted — slowly,
+              and in full.
+            </p>
+          </header>
+          <div class="grid" id="product-grid"></div>
+        </div>
+      </section>
+
+      <!-- 14 CLOSE -->
+      <section class="scene" data-scene="close" data-year="now">
+        <div class="scene__ground" style="background:#22335c"></div>
+        <div class="scene__plate plate--center">
+          <img class="mark mark--cream" src="/assets/logo/monogram-cream.png" alt="" />
+          <p class="ornament">Purity, perfected</p>
+          <h2 class="display">Ashcroft</h2>
+          <p class="label">Dental House</p>
+          <span class="gold-rule"></span>
+          <p class="body body--center">
+            14 Museum Street<br />
+            London WC1A 1JS<br />
+            +44 20 7946 0110
+          </p>
+          <p class="label">Chalk-free since 1910 · Sealed by hand in London</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay" id="overlay" hidden>
+      <button class="overlay__close" id="overlay-close" type="button" aria-label="Close the tin">
+        Close
+      </button>
+      <div class="overlay__stage">
+        <div class="overlay__visual">
+          <img id="overlay-img" alt="" />
+        </div>
+        <div class="overlay__copy">
+          <p class="label" id="overlay-family"></p>
+          <h3 class="display" id="overlay-name"></h3>
+          <p class="ornament" id="overlay-line"></p>
+          <p class="body" id="overlay-note"></p>
+          <p class="label">Key ingredients</p>
+          <ul class="ingredients" id="overlay-ings"></ul>
+          <p class="fine" id="overlay-meta"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="scroll-track" class="scroll-track" aria-hidden="true"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
