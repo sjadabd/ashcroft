@@ -2,3 +2,10 @@ node_modules
 dist
 source-assets
 .DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+.idea
+.vscode
